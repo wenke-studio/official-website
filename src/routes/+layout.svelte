@@ -1,5 +1,6 @@
 <script lang="ts">
   import { i18n } from "$lib/i18n";
+  import Header from "$lib/ui/Header.svelte";
   import { ParaglideJS } from "@inlang/paraglide-sveltekit";
   import "../app.css";
 
@@ -20,7 +21,7 @@
 <ParaglideJS {i18n}>
   <div class="grid h-screen grid-rows-[auto_1fr_auto]">
     <!-- Header -->
-    <header class="sticky top-0 z-10 backdrop-blur-sm p-4">(header)</header>
+    <Header />
     <!-- Main -->
     <main class="p-4 space-y-4">
       {@render children()}
