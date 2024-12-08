@@ -6,6 +6,8 @@ import * as themes from "@skeletonlabs/skeleton/themes";
 export default {
   content: ["./src/**/*.{html,js,svelte,ts}", contentPath(import.meta.url, "svelte")],
 
+  darkMode: "selector",
+
   theme: {
     extend: {},
   },
@@ -13,7 +15,7 @@ export default {
   plugins: [
     skeleton({
       // NOTE: each theme included will be added to your CSS bundle
-      themes: [themes.cerberus, themes.rose],
+      themes: [themes.rocket],
     }),
   ],
 } satisfies Config;
