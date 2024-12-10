@@ -19,30 +19,57 @@
   <meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<section>
-  <h1>
-    <span class="welcome"> {welcome} </span>
-  </h1>
+{#snippet hero()}
+  <section class="h-[512px] bg-sky-200 dark:bg-sky-900">Hero</section>
+{/snippet}
 
-  <h1>h1</h1>
-  <h2>h2</h2>
-  <h3>h3</h3>
-  <h4>h4</h4>
-  <h5>h5</h5>
-  <h6>h6</h6>
-  <p>p</p>
-  <span>span</span>
-  <blockquote>blockquote</blockquote>
-  <a href="/">a</a>
-  <pre>pre</pre>
-  <code>code</code>
-  <kbd>kbd</kbd>
-  <del>del</del>
-  <ins>ins</ins>
+{#snippet typography()}
+  <section class="min-h-[512px]">
+    <h1>h1</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+    <h6>h6</h6>
+    <p class="debug">p1</p>
+    <p class="debug">p2</p>
+    <p class="debug">p3</p>
+    <span>span</span>
+    <blockquote>blockquote</blockquote>
+    <a href="/">a</a>
+    <pre>pre</pre>
+    <code>code</code>
+    <kbd>kbd</kbd>
+    <del>del</del>
+    <ins>ins</ins>
+  </section>
+{/snippet}
 
-  <div>
+{#snippet i18nToogle()}
+  <section class="h-[512px] bg-green-200 dark:bg-green-900">
     <p>{m.hello_world({ name: "Wenke" })}</p>
-    <button onclick={() => switchToLanguage("en")}>en</button>
-    <button onclick={() => switchToLanguage("zh-tw")}>zh-tw</button>
-  </div>
-</section>
+
+    <div class="flex gap-2 middel max-w-xs">
+      <button
+        type="button"
+        class="border border-blue-600 rounded px-2 py-1 active:scale-95 w-full"
+        onclick={() => switchToLanguage("en")}
+      >
+        en
+      </button>
+      <button
+        type="button"
+        class="border border-blue-600 rounded px-2 py-1 active:scale-95 w-full"
+        onclick={() => switchToLanguage("zh-tw")}
+      >
+        zh-tw
+      </button>
+    </div>
+  </section>
+{/snippet}
+
+<div>
+  {@render hero()}
+  {@render typography()}
+  {@render i18nToogle()}
+</div>
