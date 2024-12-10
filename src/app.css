@@ -3,45 +3,31 @@
 @import "tailwindcss/utilities";
 
 @layer base {
-  /* Skeleton Typography */
   h1 {
-    @apply h1;
   }
   h2 {
-    @apply h2;
   }
   h3 {
-    @apply h3;
   }
   h4 {
-    @apply h4;
   }
   h5 {
-    @apply h5;
   }
   h6 {
-    @apply h6;
   }
   blockquote {
-    @apply blockquote;
   }
   a {
-    @apply anchor;
   }
   pre {
-    @apply pre;
   }
   code {
-    @apply code;
   }
   kbd {
-    @apply kbd;
   }
   del {
-    @apply del;
   }
   ins {
-    @apply ins;
   }
 }
 
