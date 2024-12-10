@@ -20,18 +20,20 @@
 </svelte:head>
 
 {#snippet hero()}
-  <section class="h-[512px] bg-sky-200">Hero</section>
+  <section class="h-[512px] bg-sky-200 dark:bg-sky-900">Hero</section>
 {/snippet}
 
 {#snippet typography()}
-  <section class="h-[512px] bg-pink-200">
+  <section class="min-h-[512px]">
     <h1>h1</h1>
     <h2>h2</h2>
     <h3>h3</h3>
     <h4>h4</h4>
     <h5>h5</h5>
     <h6>h6</h6>
-    <p>p</p>
+    <p class="debug">p1</p>
+    <p class="debug">p2</p>
+    <p class="debug">p3</p>
     <span>span</span>
     <blockquote>blockquote</blockquote>
     <a href="/">a</a>
@@ -44,7 +46,7 @@
 {/snippet}
 
 {#snippet i18nToogle()}
-  <section class="h-[512px] bg-green-200">
+  <section class="h-[512px] bg-green-200 dark:bg-green-900">
     <p>{m.hello_world({ name: "Wenke" })}</p>
 
     <div class="flex gap-2 middel max-w-xs">

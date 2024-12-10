@@ -32,7 +32,7 @@
 {/snippet}
 
 {#snippet header()}
-  <header class="sticky top-0 z-10 p-4 debug backdrop-blur-sm">
+  <header class="sticky top-0 z-10 px-8 py-4 backdrop-blur-sm">
     <div class="mx-auto flex between middle gap-4 w-full">
       {@render brand(title)}
       {@render headerMenu()}
@@ -41,7 +41,7 @@
 {/snippet}
 
 {#snippet footer()}
-  <footer class="p-4 debug">
+  <footer class="p-4">
     <div class="mx-auto flex between middle gap-4 w-full">
       {@render brand(title)}
     </div>
