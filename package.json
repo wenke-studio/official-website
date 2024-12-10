@@ -39,6 +39,8 @@
   },
   "dependencies": {
     "@inlang/paraglide-sveltekit": "^0.11.1",
-    "@tabler/icons-svelte": "^3.24.0"
+    "@tabler/icons-svelte": "^3.24.0",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.5.5"
   }
 }
